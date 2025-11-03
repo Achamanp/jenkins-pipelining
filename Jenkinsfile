@@ -14,13 +14,13 @@ pipeline{
     }
     post{
         always{
-            sh 'echo "Alway"'
+            echo 'Always'  // Use echo step directly
         }
         success{
-            sh 'echo "Success"'
+            echo 'Success'
         }
         failure{
-            sh 'echo "Failure"'
+            echo 'Failure'
         }
     }
 }
