@@ -1,7 +1,7 @@
 pipeline{
     agent any
-    tool{
-        jdk17
+    tools{
+        jdk 'jdk17'  // Correct syntax: tool_type 'tool_name'
     }
     stages{
         stage("compile"){
@@ -17,7 +17,7 @@ pipeline{
     }
     post{
         always{
-            echo 'Always'  // Use echo step directly
+            echo 'Always'
         }
         success{
             echo 'Success'
