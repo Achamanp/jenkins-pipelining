@@ -20,7 +20,7 @@ pipeline{
             sh 'echo "Success"'
         }
         failure{
-            'echo "Failure"'
+            sh 'echo "Failure"'
         }
     }
 }
