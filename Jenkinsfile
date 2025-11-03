@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        jdk 'jdk17'  // Correct syntax: tool_type 'tool_name'
+        jdk 'jdk17'
     }
     stages{
         stage("compile"){
